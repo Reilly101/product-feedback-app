@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+.display {
+  display: flex;
+  flex-direction: row;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topbox {
+  width: 255px;
+  height: 137px;
+  background: radial-gradient(
+      128.88% 128.88% at 103.9% -10.39%,
+      #e84d70 0%,
+      #a337f6 53.09%,
+      #28a7ed 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leftcontainer {
+  width: 255px;
+  height: 529px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rightcontainer {
+  margin-left: 30px;
+  margin-right: 165px;
+  margin-top: 25px;
+}
+.blueheader {
+  width: 825px;
+  height: 72px;
+  background: #373f68;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+.feedbackcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: wheat;
+  border-radius: 10px;
+  margin: 10px;
+}
+.rightside-fb {
   display: flex;
   flex-direction: column;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.numberratings {
+  margin-top: 15px;
+}
+.flex {
+  display: flex;
+  padding: 70px;
+}
+.number-fb {
+  display: flex;
+  flex-direction: row;
+}
+.texttoprc {
+  display: flex;
+  width: 100%;
+  margin-left: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.addfeedback {
+  margin-left: 400px;
+  background: #ad1fea;
+  border-radius: 10px;
+  border: none;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+  width: 158px;
+  height: 44px;
+}
+.sortby {
+  margin-left: 15px;
+}
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+}
+.status-fb {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661e6;
+  background: #f2f4ff;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 5px;
+  min-width: 20px;
+  text-align: center;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+}
+.status-fb.active {
+  background: #4661e6;
   color: white;
 }
+.modal {
+  position: static;
+  background-color: #f2f2f2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 550px;
+  height: 350px;
+}
+.commentscontainer {
+  display: flex;
 
-.App-link {
-  color: #61dafb;
+  width: 666px;
+  display: flex;
+  flex-direction: column;
+}
+.commentscontainer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userinfo {
+  width: 166px;
+  height: 40px;
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.picrectangle {
+  height: 227px;
+  width: 90px;
+}
+
+.commentstext {
+  margin-left: 90px;
+}
+.replycontainers {
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-bottom: 30px;
+}
+.editbutton {
+  background: #7c91f9;
+  border-radius: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  width: 142px;
+  height: 44px;
+  color: #f2f4fe;
+  border: none;
+}
+.toprow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  height: 272px;
+  background: #aaa;
+  border-radius: 5px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 350px;
+  padding: 15px;
+position: relative;
+
+}
+.line {
+  background: #f49f85;
+  border-radius: 5px 5px 0px 0px;
+  width: 350px;
+  height: 6px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+body {
+  background: #f2f2f2;
+}
+
+.upvcardandcomments {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 69px;
+  height: 40px;
+  margin-top: 30px;
+}
+.categorycard {
+  margin-top: 20px;
+}
+.number-fb {
+  margin-left: 175px;
+}
+.topheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #373f68;
+  border-radius: 10px;
+  padding: 33px 40px;
+}
+.goback {
+  text-decoration-line: underline;
+  color: #ffffff;
+  border: none;
+  background: #373f68;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.mainholder {
+  width: 1110px;
+  margin: auto;
+}
+.columnsetup {
+display: flex;
+padding: 15px;
+justify-content: space-between;
+}
+.valuenum {
+margin-left: 30px;
+display: inline;
+}
+.titlevalue {
+  display: flex;
+flex-direction: row;
+  
 }
